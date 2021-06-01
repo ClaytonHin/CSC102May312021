@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<!--UATSpace Page
+    written by: Clayton Hinderline
+    Claytonhinderline@gmail.com
+    10May2021-->
+<html>
+
+<head>
+    <link href="Style.css" rel="stylesheet" type="text/css" />
+    <!--Coloring My website-->
+    <script src="Code.js"></script>
+    <title>
+        Clayton's UATSpace Page
+    </title>
+</head>
+
+<body>
+    <!--Making a table to hold h1 title and jpg-->
+    <table>
+        <td><img src="UATspaceLogo-2.jpg"></td>
+        <td>
+            <h1>
+                UAT Space Page
+            </h1>
+        </td>
+    </table>
+    <table border="2" width="70%">
+        <!--Changes the table border to 2 lines and forces the table to take up 70% of the screen-->
+        <col style="width: 35%;">
+        <!--Sets the width of the table -->
+        <col style="width: 35%;">
+        <thead>
+            <tr style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"> <!--Sets the font of the title headers-->
+                <th>Data Type</th>
+                <th>Reading</th>
+            <tr>
+        </thead>
+        <tbody>
+            <tr id="seconds">
+                <td>Time Elapsed:</td>
+                <td>15 Seconds</td>
+            </tr>
+            <!--Adds the Below Text into the collums-->
+            <tr>
+                <td id="latitude">Latitude:</td> <!--Displays latitude in the left collumn and 0 in the right collumn -->
+                <td>0</td>
+            </tr>
+            <!--tr = Table Row, td = Table Data-->
+            <tr>
+                <td id="longitude">Longitude:</td> <!--Displays longitude in the left collumn and 0 in the right collumn -->
+                <td>0</td>
+            </tr>
+            <tr>
+                <td id="gps_altitude">GPS Altitude:</td> 
+                <td>0</td>
+            </tr>
+            <tr>
+                <td id="bmpSensor_altitude">BMP Sensor Altitude:</td>
+                <td>30383.04</td>
+            </tr>
+            <tr>
+                <td id="bmpSensor_pressure">BMP Sensor Pressure:</td>
+                <td>2.34</td>
+            </tr>
+            <tr>
+                <td id="bmpSensor_temperature">BMP Sensor Temperature:</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td id="digSensor_temperature">Digital Sensor Temperature:</td>
+                <td>24.12</td>
+            </tr>
+            <tr>
+                <td id="cssSensor_temperature">CSS Sensor Temperature:</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <td id="cssSensor_EC02">CSS Sensor eC02:</td>
+                <td>400</td>
+            </tr>
+            <tr>
+                <td id="cssSensor_TV0C">CSS Sensor TV0C:</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td id="UV">UV:</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td id="accelX">Accel X:</td>
+                <td>-0.87</td>
+            </tr>
+            <tr>
+                <td id="accelY">Accel Y:</td>
+                <td>-0.02</td>
+            </tr>
+            <tr>
+                <td id="accelZ">Accel Z:</td>
+                <td>9.61</td>
+            </tr>
+            <tr>
+                <td id="magneticX">Magnetic X:</td>
+                <td>0.13</td>
+            </tr>
+            <tr>
+                <td id="magneticY">Magnetic Y:</td>
+                <td>0.57</td>
+            </tr>
+            <tr>
+                <td id="magneticZ">Magnetic Z:</td>
+                <td>-0.24</td>
+            </tr>
+            <tr>
+                <td id="gyroX">Gyro X:</td>
+                <td>4.66</td>
+            </tr>
+            <tr>
+                <td id="gyroY">Gyro Y:</td>
+                <td>0.01</td>
+            </tr>
+            <tr>
+                <td id="gyroZ">Gyro Z:</td>
+                <td>-0.4</td>
+            </tr>
+        </tbody>
+    </table>
+    <script>
+
+    </script>
+
+    <br>
+    <!--Adding a spaceing to the webpage-->
+    <p id="countdownTimer">Countdown Status...</p>
+    <!--Displays the Countdown timer-->
+
+    <button class="button" id="startButton" onclick="start();">Start</button> <!--Creates the id's for the start and stop button-->
+    <button class="button" id="stopButton" onclick="stop()">Stop</button>
+    <!--Adds a countdown button on the webpage-->
+    </button>
+
+    <script>
+    //We do not need alert anymore
+    //alert("Test of the Alert function");
+    </script>
+
+    <!--Space for the craps game-->
+    <br>
+    <br>
+    <!--Spacers-->
+    <div id="die1Results">die1 status...</div><br>
+    <!--Displays you a result for die1-->
+    <div id="die2Results">die2 status...</div><br>
+    <!--Displays you a result for die2-->
+    <div id="sumResults">sum status...</div><br>
+    <!--Displays you a sum result of the 2 die-->
+    <div id="crapsResults">Craps game status...</div><br>
+    <!--Displays If you Lost/win or if you need to roll again-->
+    <button onclick="playCraps();">Play Craps</button><br>
+    <!--Adds a Play Craps Button On Webpage-->
+    <br>
+    <br>
+</body>
+
+
+
+</html>
